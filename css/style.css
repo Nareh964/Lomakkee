@@ -1,0 +1,59 @@
+body{
+    max-width: 600;
+    max-height: 700;
+}
+/* inputs */
+
+input[id="id"]{
+    width:5%;
+}
+input[id="password"]{
+    width:5%;
+}
+input[id="name"]{
+    width:15%;
+}
+input[id="address"]{
+    width:15%;
+}
+input[id="zip"]{
+    width:6%;
+}
+input[id="email"]{
+    width:15%;
+}
+
+/*form*/
+.form-row {
+    margin-top:8px;
+    align-items:center;
+}
+
+/* label */
+label{
+    display: inline-block;
+    text-align: right;
+    margin-left: 8px;
+    width:100px;
+    height: auto;
+}
+
+
+
+/*Button */
+button{
+   margin-left: 150px;
+   margin-top: 10px;
+   width:80px;
+   height:25px;
+}
+
+/* Textarea */
+textarea{
+    margin-left:115px;
+    margin-top: -15px;
+    width: 300px;
+    height: 100px;
+    resize:none;
+    display:block;
+}
