@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lomakkeen validointi</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <h1>Rekisteröitymislomake</h1>
+    <h4>Siiryy kentästä toiseen tab-näppäimellä.</h4>
+</header>
+<form id="lomakke">
+    <div class="form-row">
+        <label>Käyttäjä ID: </label>
+        <input id="id" >
+    </div>
+
+    <div class="form-row">
+        <label>Salasana: </label> 
+        <input id="password" >
+    </div>
+
+    <div class="form-row">
+        <label>Nimi: </label> 
+        <input id="name" >       
+    </div>
+
+    <div class="form-row">
+        <label >Osoite: </label> 
+        <input id="address" >     
+    </div>
+
+    <div class="form-row">
+        <label >Maa:</label>
+        <select id="maa">
+            <option value="non">(Valitse maa)</option>
+            <option value="fi">Suomi</option>
+            <option value="en">Englanti</option>
+            <option value="us">Amerikka</option>
+            <option value="es">Espanja</option>
+            <option value="fr">Ranska</option>
+        </select>
+    </div>
+
+    <div class="form-row">
+        <label>Postinumero: </label> 
+        <input id="zip" >      
+    </div>
+
+    <div class="form-row">
+        <label>Sähköposti: </label>
+        <input id="email">       
+    </div>
+    
+   
+
+    <div class="form-row">
+        <label>Sukupuoli: </label>
+        <input type="radio" id="mies" name="sukupuoli" value="Man">Mies
+
+        <input type="radio" id="nainen" name="sukupuoli" value="Woman">Nainen
+      
+    </div>
+   
+    <div class="form-row">
+        <label>Kieli: </label>
+        <input type="checkbox" id="suomi" name="lang" value="fin">Suomi
+        <input type="checkbox" id="muu" name="lang" value="multi">Muu kuin suomi
+    </div>
+     
+    <div class="row-form">
+        <label>Lisätietoja: </label> 
+    </div>
+    <textarea name="detail" id="extra"></textarea>
+   
+    <div class="form-row">
+        <button id="submit">Lähetä</button>
+    </div>
+</form>
+
+<p id="error" style="color: red"></p>
+
+    
+<script src="js/validointi.js"></script>
+</body>
+</html>
