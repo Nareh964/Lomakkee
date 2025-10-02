@@ -15,21 +15,25 @@
     <div class="form-row">
         <label>Käyttäjä ID: </label>
         <input id="id" >
+        <div class="error" id="id-error"></div>
     </div>
 
     <div class="form-row">
         <label>Salasana: </label> 
         <input id="password" >
+        <div class="error" id="password-error"></div>
     </div>
 
     <div class="form-row">
         <label>Nimi: </label> 
-        <input id="name" >       
+        <input id="name" >
+        <div class="error" id="name-error"></div>       
     </div>
 
     <div class="form-row">
         <label >Osoite: </label> 
-        <input id="address" >     
+        <input id="address" > 
+        <div class="error" id="address-error"></div>    
     </div>
 
     <div class="form-row">
@@ -42,16 +46,19 @@
             <option value="es">Espanja</option>
             <option value="fr">Ranska</option>
         </select>
+        <div class="error" id="maa-error"></div>
     </div>
 
     <div class="form-row">
         <label>Postinumero: </label> 
-        <input id="zip" >      
+        <input id="zip" >  
+        <div class="error" id="zip-error"></div>    
     </div>
 
     <div class="form-row">
         <label>Sähköposti: </label>
-        <input id="email">       
+        <input id="email">    
+        <div class="error" id="email-error"></div> 
     </div>
     
    
@@ -59,15 +66,15 @@
     <div class="form-row">
         <label>Sukupuoli: </label>
         <input type="radio" id="mies" name="sukupuoli" value="Man">Mies
-
         <input type="radio" id="nainen" name="sukupuoli" value="Woman">Nainen
-      
+        <div class="error" id="sukupuoli-error"></div>
     </div>
    
     <div class="form-row">
         <label>Kieli: </label>
         <input type="checkbox" id="suomi" name="lang" value="fin">Suomi
         <input type="checkbox" id="muu" name="lang" value="multi">Muu kuin suomi
+        <div class="error" id="lang-error"></div>
     </div>
      
     <div class="row-form">
@@ -80,7 +87,6 @@
     </div>
 </form>
 
-<p id="error" style="color: red"></p>
 
     
 <script src="js/validointi.js"></script>
