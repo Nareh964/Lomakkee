@@ -57,3 +57,10 @@ textarea{
     resize:none;
     display:block;
 }
+
+/* Error */
+.error{
+    color:red;
+    margin-left: 80px;
+    height:15px;
+}
